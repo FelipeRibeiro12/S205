@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+  }
+  
+  header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    padding: 30px;
+    display: block;
+  }
+  
+  #user_name {
+    display: block;
+    font-size: 20pt;
+    padding: 5px;
+  }
+  
+  #configuracao {
+    width: 50px;
+    background-color: black;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+  }
+  
+  #notificacoes {
+    position: relative;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+  }
+  
+  #icon {
+    padding: 5px;
+    display: inline;
+  }
+
+  #title {
+    padding: 5px;
+    display: inline;
+  }
+  
+  #mns {
+    padding: 5px;
+    display: inline;
+  }
