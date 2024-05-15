@@ -1,6 +1,17 @@
+:root {
+  --cor-click: #126ae2; /* Click */
+  --cor-sombra: #0a599b; /* Azul Escuro */
+  --cor-text: black; /* Preto */
+  --cor-back1: #edf2f4; /* Azul claro */
+  --cor-back2: #6a937a; /* Verde Escuro */
+}
+
 body {
     margin: 0px;
+    background-color: var(--cor-back1);
   }
+
+@import url(https://fonts.googleapis.com/css?family=Arimo);
   
   header {
     position: relative;
@@ -8,12 +19,12 @@ body {
     left: 0px;
     right: 0px;
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     display: block;
   }
   
   #user_name {
-    display: block;
+    display: absolute;
     font-size: 20pt;
     padding: 5px;
   }
@@ -23,30 +34,90 @@ body {
     background-color: black;
     padding: 10px;
     position: absolute;
-    right: 0px;
-    top: 10px;
+    right: 50px;
+    top: 20px;
   }
   
   #notificacoes {
-    position: relative;
-    background-color: white;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 10px;
-  }
-  
-  #icon {
+  position: relative;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  rigth: 0px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#notf {
+    display: block;
+    font-size: 15pt;
     padding: 5px;
-    display: inline;
   }
 
-  #title {
-    padding: 5px;
-    display: inline;
-  }
+#notficacoes_box {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  rigth: 0px;
+  margin-top:5px;
+}
   
-  #mns {
-    padding: 5px;
-    display: inline;
-  }
+  #icon {
+  width: 18px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+  #title {
+  padding: 5px;
+  width: 80%;
+  display: inline-block;
+}
+  
+ #mns {
+  padding: 5px;
+  width: 80%;
+  display: inline-block;
+}
+
+.material-symbols-outlined {
+  color: var(--cor-click);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.settings {
+  font-size: 30px;
+}
+
+.mail {
+  font-size: 18px;
+}
+
+.check_circle {
+  font-size: 18px;
+}
+
+.work {
+  font-size: 18px;
+}
+
+.icoP {
+  font-size: 18px;
+  /* vertical-align: middle; */ /* propriedade para deixar o icone centralizado na linha */
+}
+
+.font {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 11px;
+  color: var(--cor-text)
+}
