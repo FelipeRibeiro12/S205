@@ -18,84 +18,82 @@ body {
     top: 0px;
     left: 0px;
     right: 0px;
-    background-color: --cor-back1;
+    background-color: white;
     padding: 20px;
     display: block;
   }
   
   #user_name {
     display: absolute;
-    font-size: 30pt;
-    padding: 0px;
+    font-size: 20pt;
+    padding: 5px;
   }
   
   #configuracao {
     width: 50px;
-    background-color: --cor-back1;
+    background-color: white;
     padding: 10px;
     position: absolute;
-    right: 0px;
-    top: 23px;
+    right: 10px;
+    top: 20px;
   }
   
   #notificacoes {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  rigth: 0px;
-  padding: 10px;
-  margin: 0px;
-}
-
-#notf {
-    display: block;
-    font-size: 17pt;
-    padding: 5px;
-  }
-
-#notificacoes_box {
   position: relative;
   background-color: white;
   top: 0px;
   left: 0px;
   rigth: 0px;
-  padding: 10px;
-  margin: 00px;
+  padding: 20px;
+  margin: 10px;
   border-radius: 16px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top:10px;
+}
+
+#notf {
+    display: block;
+    font-size: 15pt;
+    padding: 5px;
+  }
+
+#notficacoes_box {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  rigth: 0px;
+  margin-top:5px;
 }
   
   #icon {
-  width: 30px;
+  width: 18px;
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
 }
 
   #title {
-  padding: 7px;
-  width: 70%;
+  padding: 5px;
+  width: 80%;
   display: inline-block;
 }
   
  #mns {
-  padding: 10px;
+  padding: 5px;
   width: 80%;
   display: inline-block;
 }
 
 .material-symbols-outlined {
-  color: black;
+  color: var(black);
   font-variation-settings:
-  'FILL' 1,
-  'wght' 600,
+  'FILL' 0,
+  'wght' 400,
   'GRAD' 0,
-  'opsz' 800
+  'opsz' 24
 }
 
 .settings {
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .mail {
