@@ -7,29 +7,32 @@
 }
 
 body {
-    margin: 0px;
-    background-color: var(--cor-back1);
-  }
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-back1);;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Arimo);
-  
-  header {
+
+header {
     position: relative;
     top: 0px;
     left: 0px;
     right: 0px;
     background-color: white;
-    padding: 20px;
+    padding: 23px;
     display: block;
   }
-  
-  #user_name {
+
+#user_name {
     display: absolute;
     font-size: 20pt;
     padding: 5px;
   }
-  
-  #configuracao {
+
+#configuracao {
     width: 50px;
     background-color: white;
     padding: 10px;
@@ -37,8 +40,17 @@ body {
     right: 10px;
     top: 20px;
   }
-  
-  #notificacoes {
+
+#configuracao .material-symbols-outlined {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+#notificacoes {
   position: relative;
   background-color: white;
   top: 0px;
@@ -50,74 +62,100 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#notf {
+#notificacoes_box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#notificacoes_box #icon {
+    margin-right: 10px;
+}
+
+#notificacoes_box .material-symbols-outlined {
+    font-size: 1.5em;
+    color: #3498db;
+}
+
+.carousel {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-item p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.carousel-item p2 {
     display: block;
-    font-size: 15pt;
-    padding: 5px;
-  }
-
-#notficacoes_box {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  margin-top:5px;
-}
-  
-  #icon {
-  width: 18px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 5px;
+    font-size: 1em;
+    margin: 5px 0;
 }
 
-  #title {
-  padding: 5px;
-  width: 80%;
-  display: inline-block;
-}
-  
- #mns {
-  padding: 5px;
-  width: 80%;
-  display: inline-block;
-}
-
-.material-symbols-outlined {
-  color: var(black);
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2c3e50;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 10px;
 }
 
-.settings {
-  font-size: 30px;
+.carousel-control-prev {
+    left: 10px;
 }
 
-.mail {
-  font-size: 18px;
+.carousel-control-next {
+    right: 10px;
 }
 
-.check_circle {
-  font-size: 18px;
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
-.work {
-  font-size: 18px;
+.carousel-indicators li {
+    background-color: #2c3e50;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
-.icoP {
-  font-size: 18px;
-  /* vertical-align: middle; */ /* propriedade para deixar o icone centralizado na linha */
-}
-
-.font {
-  font-family: "Arimo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-size: 11px;
-  color: var(--cor-text)
+.carousel-indicators .active {
+    background-color: #3498db;
 }
