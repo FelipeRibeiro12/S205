@@ -1,49 +1,53 @@
 :root {
-  --cor-click: #126ae2; /* Click */
-  --cor-sombra: #0a599b; /* Azul Escuro */
-  --cor-text: black; /* Preto */
-  --cor-back1: #edf2f4; /* Azul claro */
-  --cor-back2: #6a937a; /* Verde Escuro */
+  --cor-primary: #2565b0; /* Azul Primário */
+  --cor-secondary: #1f4a8e; /* Azul Secundário */
+  --cor-back-light: #f5faff; /* Fundo Claro */
+  --cor-back-dark: #d0e0f4; /* Fundo Escuro */
+  --cor-text: #2c3e50; /* Texto */
+  --cor-shadow: rgba(0, 0, 0, 0.1); /* Sombra */
+  --cor-accent: #3489e4; /* Acento */
+  --cor-button-back: #2565b0; /* Fundo do Botão */
+  --cor-button-text: #ffffff; /* Texto do Botão */
+  --cor-notification-back: #ffffff; /* Fundo da Notificação */
+  --cor-carousel-control-back: rgba(255, 255, 255, 0.8); /* Fundo do Controle do Carrossel */
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--cor-back1);;
-    color: #333;
+    font-family: 'Arimo', Arial, sans-serif;
+    background-color: var(--cor-back-light);
+    color: var(--cor-text);
     margin: 0;
     padding: 0;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Arimo);
-
 header {
     position: relative;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: white;
-    padding: 23px;
-    display: block;
-  }
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--cor-primary);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px var(--cor-shadow);
+}
 
 #user_name {
-    display: absolute;
     font-size: 20pt;
-    padding: 5px;
-  }
+    color: white;
+}
 
 #configuracao {
-    width: 50px;
-    background-color: white;
-    padding: 10px;
-    position: absolute;
-    right: 10px;
-    top: 20px;
-  }
+    width: 20px;
+    padding: 5px;
+    border-radius: 50%;
+}
 
 #configuracao .material-symbols-outlined {
     font-size: 1.5em;
     cursor: pointer;
+    color: white;
 }
 
 main {
@@ -51,25 +55,32 @@ main {
 }
 
 #notificacoes {
-  position: relative;
-  background-color: white;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 16px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--cor-notification-back);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px var(--cor-shadow);
 }
+
+#notf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-notification-back);
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 10px;
+} 
 
 #notificacoes_box {
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--cor-notification-back);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--cor-shadow);
     padding: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #notificacoes_box #icon {
@@ -78,15 +89,35 @@ main {
 
 #notificacoes_box .material-symbols-outlined {
     font-size: 1.5em;
-    color: #3498db;
+    color: var(--cor-primary);
 }
 
 .carousel {
-    margin: 10px;
+    margin: 20px 0;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px var(--cor-shadow);
+}
+
+#tta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-notification-back);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+#ttp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-notification-back);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 0px;
 }
 
 .carousel-inner {
@@ -97,9 +128,10 @@ main {
 .carousel-item {
     min-width: 100%;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: var(--cor-notification-back);
     padding: 20px;
     text-align: center;
+    color: var(--cor-text);
 }
 
 .carousel-item p {
@@ -119,10 +151,10 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #2c3e50;
+    color: var(--cor-text);
     cursor: pointer;
     user-select: none;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--cor-carousel-control-back);
     border-radius: 50%;
     padding: 10px;
 }
@@ -148,14 +180,15 @@ main {
 }
 
 .carousel-indicators li {
-    background-color: #2c3e50;
+    background-color: var(--cor-text);
     width: 10px;
     height: 10px;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .carousel-indicators .active {
-    background-color: #3498db;
+    background-color: var(--cor-primary);
 }
