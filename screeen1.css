@@ -1,15 +1,12 @@
 :root {
   --cor-primary: #2565b0; /* Azul Primário */
-  --cor-secondary: #1f4a8e; /* Azul Secundário */
-  --cor-back-light: #f5faff; /* Fundo Claro */
-  --cor-back-dark: #d0e0f4; /* Fundo Escuro */
+  --cor-back-light: #ffffff; /* Fundo Claro */
   --cor-text: #2c3e50; /* Texto */
-  --cor-shadow: rgba(0, 0, 0, 0.1); /* Sombra */
+  --cor-shadow: rgba(37, 101, 176, 0.5); /* Sombra */
   --cor-accent: #3489e4; /* Acento */
   --cor-button-back: #2565b0; /* Fundo do Botão */
   --cor-button-text: #ffffff; /* Texto do Botão */
-  --cor-notification-back: #ffffff; /* Fundo da Notificação */
-  --cor-carousel-control-back: rgba(255, 255, 255, 0.8); /* Fundo do Controle do Carrossel */
+  --cor-carousel-control-back: rgba(37, 101, 176, 0.5); /* Fundo do Controle do Carrossel */
 }
 
 body {
@@ -31,6 +28,8 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px var(--cor-shadow);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 #user_name {
@@ -97,7 +96,7 @@ main {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 2px 10px var(--cor-shadow);
+    box-shadow: 0 4px 8px var(--cor-shadow);
 }
 
 #tta {
@@ -151,10 +150,9 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--cor-text);
+    color: var(--cor-primary);
     cursor: pointer;
     user-select: none;
-    background-color: var(--cor-carousel-control-back);
     border-radius: 50%;
     padding: 10px;
 }
