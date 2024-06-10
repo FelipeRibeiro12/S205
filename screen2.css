@@ -1,59 +1,83 @@
+:root {
+  --cor-primary: #2565b0; /* Azul Primário */
+  --cor-back-light: #ffffff; /* Fundo Claro */
+  --cor-text: #2c3e50; /* Texto */
+  --cor-shadow: rgba(37, 101, 176, 0.5); /* Sombra */
+  --cor-accent: #3489e4; /* Acento */
+  --cor-button-back: #2565b0; /* Fundo do Botão */
+  --cor-button-text: #ffffff; /* Texto do Botão */
+}
+
 body {
-    margin: 0px;
-  }
-  
-  header {
+    font-family: 'Arimo', Arial, sans-serif;
+    background-color: var(--cor-back-light);
+    color: var(--cor-text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
     position: relative;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: white;
-    padding: 30px;
-    display: block;
-  }
-  
-  #perfil {
-    width: 50px;
-    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--cor-primary);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px var(--cor-shadow);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#perfil {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main {
     padding: 10px;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-  }
-  
-  #tipo {
-    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px;  /* Reduzir o padding vertical */
+    margin: 10px 0px;  /* Reduzir o margin vertical */
+    list-style: none;
     background-color: white;
-    padding: 10px;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-  }
-  
-  #icon {
+}
+
+
+nav a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    border-bottom: 2px solid black;
+}
+
+.filter-container {
+    padding: 5px 20px;  /* Reduzir o padding vertical */
+    margin: 10px 0;  /* Reduzir o margin vertical */
+    background-color: white;
+}
+
+.filter-container select {
     padding: 5px;
-    display: inline;
-  }
+    width: 100%;
+}
 
-  #title {
-    padding: 5px;
-    display: inline;
-  }
-
-  #filtro {
-    width: 50px;
+.card {
     background-color: white;
-    padding: 10px;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-  }
-
-  #estagios {
-    width: 50px;
-    background-color: white;
-    padding: 10px;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-  }
+    padding: 40px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px var(--cor-shadow);
+    border-radius: 10px;
+}
