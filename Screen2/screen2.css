@@ -1,83 +1,93 @@
 :root {
-  --cor-primary: #2565b0; /* Azul Primário */
-  --cor-back-light: #ffffff; /* Fundo Claro */
-  --cor-text: #2c3e50; /* Texto */
-  --cor-shadow: rgba(37, 101, 176, 0.5); /* Sombra */
-  --cor-accent: #3489e4; /* Acento */
-  --cor-button-back: #2565b0; /* Fundo do Botão */
-  --cor-button-text: #ffffff; /* Texto do Botão */
-}
-
-body {
-    font-family: 'Arimo', Arial, sans-serif;
-    background-color: var(--cor-back-light);
-    color: var(--cor-text);
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--cor-primary);
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px var(--cor-shadow);
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-#perfil {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-main {
-    padding: 10px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 5px 0px;  /* Reduzir o padding vertical */
-    margin: 10px 0px;  /* Reduzir o margin vertical */
-    list-style: none;
-    background-color: white;
-}
-
-
-nav a {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-}
-
-nav a.active {
-    border-bottom: 2px solid black;
-}
-
-.filter-container {
-    padding: 5px 20px;  /* Reduzir o padding vertical */
-    margin: 10px 0;  /* Reduzir o margin vertical */
-    background-color: white;
-}
-
-.filter-container select {
-    padding: 5px;
-    width: 100%;
-}
-
-.card {
-    background-color: white;
-    padding: 40px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px var(--cor-shadow);
-    border-radius: 10px;
-}
+    --cor-primary: #2565b0; /* Azul Primário */
+    --cor-back-light: #ffffff; /* Fundo Claro */
+    --cor-text: #2c3e50; /* Texto */
+    --cor-shadow: rgba(37, 101, 176, 0.5); /* Sombra */
+    --cor-accent: #3489e4; /* Acento */
+    --cor-button-back: #2565b0; /* Fundo do Botão */
+    --cor-button-text: #ffffff; /* Texto do Botão */
+  }
+  
+  body {
+      font-family: 'Arimo', Arial, sans-serif;
+      background-color: var(--cor-back-light);
+      color: var(--cor-text);
+      margin: 0;
+      padding: 0;
+  }
+  
+  header {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--cor-primary);
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px var(--cor-shadow);
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+  }
+  
+  #oportunidades {
+    font-size: 15pt;
+    color: white;
+  }
+  
+  #perfil {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+  }
+  
+  #perfil .material-symbols-outlined {
+      cursor: pointer;
+      color: white;
+  }
+  
+  main {
+      padding: 10px;
+  }
+  
+  nav ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 5px 0px;  /* Reduzir o padding vertical */
+      margin: 10px 0px;  /* Reduzir o margin vertical */
+      list-style: none;
+      background-color: white;
+  }
+  
+  
+  nav a {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: black;
+  }
+  
+  nav a.active {
+      border-bottom: 2px solid black;
+  }
+  
+  .filter-container {
+      padding: 5px 20px;  /* Reduzir o padding vertical */
+      margin: 10px 0;  /* Reduzir o margin vertical */
+      background-color: white;
+  }
+  
+  .filter-container select {
+      padding: 5px;
+      width: 100%;
+  }
+  
+  .card {
+      background-color: white;
+      padding: 40px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px var(--cor-shadow);
+      border-radius: 10px;
+  }
